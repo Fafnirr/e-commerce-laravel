@@ -10,9 +10,9 @@
         @method("PATCH")
         <input type="hidden" name="id" id="id" value="{{$produits->id}}" id="id" />
         <label>Lien d'image</label><br>
-        <input type="text" name="name" id="name" value="{{$produits->image}}" class="form-control"><br>
+        <input type="text" name="img" id="img" value="{{$produits->image}}" class="form-control"><br>
         <label>Nom</label><br>
-        <input type="text" name="Nom" id="Nom" value="{{$produits->name}}" class="form-control"><br>
+        <input type="text" name="name" id="name" value="{{$produits->name}}" class="form-control"><br>
         <label>Description</label><br>
         <input type="text" name="Description" id="Description" value="{{$produits->description}}" class="form-control"><br>
         <label>Prix</label><br>

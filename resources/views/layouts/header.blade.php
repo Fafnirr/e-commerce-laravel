@@ -10,21 +10,22 @@
     </head>
     <body>
         <header>
-            <nav class="navbar-light bg-light">
-                <div class="container">
-                  <a class="navbar-brand" href="#">
-                    <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24">
-                  </a>
-                </div>
-                    <ul class="nav list">
-                        <li>
-                            <a href="">Accueil</a>
-                        </li>
-                        <li>
-                            <a href="/dashboard">Dashboard</a>
-                        </li>
-                    </ul>
-              </nav>
+            <div class="" style="background-color: blueviolet">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+            </div>
         </header>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
