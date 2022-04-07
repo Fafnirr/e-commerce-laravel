@@ -1,0 +1,6 @@
+.list {
+    padding-bottom: 1em;
+    margin-bottom: 5em;
+    display: flex;
+    justify-content: space-evenly;
+}

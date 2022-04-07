@@ -14,7 +14,7 @@
         <p class="card-text">Prix : {{ $produits->prix }}</p>
   </div>
 
-    </hr>
+    <hr/>
 
   </div>
 </div>
