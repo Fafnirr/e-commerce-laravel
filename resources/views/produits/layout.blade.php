@@ -7,7 +7,6 @@
 <body>
 
 <div class="container">
-    @include('layouts.header')
     @include('layouts.accueil')
     @yield('content')
 
