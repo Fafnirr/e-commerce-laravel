@@ -22,6 +22,8 @@
     </head>
     @include('layouts.header')
     <body class="antialiased">
-        
+       
+        @include('produits.layout')
+
     </body>
 </html>

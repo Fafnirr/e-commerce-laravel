@@ -9,39 +9,76 @@
         <title>Document</title>
     </head>
     <body>
-        <header>
-            <div class="" style="background-color: blueviolet">
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled">Disabled</a>
-                </li>
-              </ul>
-              <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-                @if (Route::has('login'))
-                    <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                        @auth
-                            <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
-                        @else
-                            <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
-    
-                            @if (Route::has('register'))
-                                <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                            @endif
-                        @endauth
-                    </div>
-                @endif
+       
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand logo-font" href="index.html" id="brand">
+                Ibrahim
+            </a>
+            <!-- links toggle -->
+            <button class="navbar-toggler order-first" type="button" data-toggle="collapse" data-target="#links" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <!-- account toggle -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#account" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-shopping-cart fa-1x" aria-hidden="true"></i>
+                <span class="badge badge-light">2</span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="links">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">truc</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">truc</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">truc</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">truc</a>
+                    </li>
+                </ul>
             </div>
+            <div class="collapse navbar-collapse" id="account">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">
+                    <i class="fa fa-shopping-cart fa-1x" aria-hidden="true"></i>
+                    </a></li>
+                  
+                </ul>
             </div>
-        </header>
+        </div>
+      
+          @if (Route::has('login'))
+              <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                  @auth
+                      <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
+                  @else
+                      <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+
+                      @if (Route::has('register'))
+                          <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
+                      @endif
+                  @endauth
+              </div>
+          @endif
+      </div>
+
+    </nav>
+           
+        
+          
+       
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>
+
+
+
+
+
