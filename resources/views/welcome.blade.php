@@ -23,7 +23,8 @@
     @include('layouts.header')
     <body class="antialiased">
        
-        @include('produits.layout')
+      
+        @include('layouts.accueil')
 
     </body>
 </html>

@@ -6,7 +6,7 @@
                 <div class="card">
                     <div class="card-header">Produits</div>
                     <div class="card-body">
-                        <a href="{{ url('/produit/create') }}" class="btn btn-success btn-sm" title="Add New Contact">
+                        <a href="{{ url('/produit/create') }}" class="btn btn-success btn-sm" title="Add New Contact"> 
                             <i class="fa fa-plus" aria-hidden="true"></i> Add New
                         </a>
                         <br/>
@@ -23,6 +23,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                               
                                 @foreach($produits as $item)
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>

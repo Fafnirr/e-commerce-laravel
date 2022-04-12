@@ -9,67 +9,49 @@
         <title>Document</title>
     </head>
     <body>
-       
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-        <div class="container">
-            <a class="navbar-brand logo-font" href="index.html" id="brand">
-                Ibrahim
-            </a>
-            <!-- links toggle -->
-            <button class="navbar-toggler order-first" type="button" data-toggle="collapse" data-target="#links" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa fa-bars"></i>
-            </button>
-            <!-- account toggle -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#account" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa fa-shopping-cart fa-1x" aria-hidden="true"></i>
-                <span class="badge badge-light">2</span>
-            </button>
+       <div class="justify-content-center">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top " style="background-color: #AC397E">
+        <div class="container fluid">
+    
+  
+          
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav  justify-content-center">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      <a class="nav-link" href="#">Features</a>
+                      <a class="nav-link" href="#">Pricing</a>
+                      <a class="nav-link disabled">Disabled</a>
+                      <a href="{{ route('login') }}" class="nav-link navbar-light "style="color: white">Log in</a>
+                      <a href="{{ route('register') }}" class="nav-link nav justify-content-end"  style="color: white">Register</a>
+                    </div>
+                  </div>
+                </div>
+            </nav>
+          
+        
             
-            <div class="collapse navbar-collapse" id="links">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item dropdown">
-                        
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">truc</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">truc</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">truc</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">truc</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="collapse navbar-collapse" id="account">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">
-                    <i class="fa fa-shopping-cart fa-1x" aria-hidden="true"></i>
-                    </a></li>
-                  
-                </ul>
-            </div>
-        </div>
+       
       
           @if (Route::has('login'))
-              <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+            
                   @auth
                       <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
                   @else
-                      <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+                   
 
                       @if (Route::has('register'))
-                          <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
+                         
                       @endif
                   @endauth
               </div>
           @endif
       </div>
 
-    </nav>
+
            
         
           
