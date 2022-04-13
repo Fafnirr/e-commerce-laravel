@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AccueilController;
 use App\Http\Controllers\ProduitController;
 
 /*
@@ -14,9 +15,7 @@ use App\Http\Controllers\ProduitController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',  AccueilController::class . '@index');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
