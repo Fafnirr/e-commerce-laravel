@@ -8,7 +8,7 @@
       <form action="{{ url('produit') }}" method="post">
         {!! csrf_field() !!}
         <label>Lien d'image</label><br/>
-        <input type="text" name="img" id="img" class="form-control"><br/>
+        <input type="text" name="image" id="image" class="form-control"><br/>
         <label>Nom</label><br/>
         <input type="text" name="name" id="name" class="form-control"><br/>
         <label>Description</label><br/>
