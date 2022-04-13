@@ -4,3 +4,9 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+
+.car { 
+        width:2000px; 
+        height:400px; 
+        }

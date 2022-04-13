@@ -1385,3 +1385,9 @@ select {
   }
 }
 
+.bg-n{
+  background-color: #403F3F;
+}
+.bg-v{
+  background-color: #AC397E;
+}

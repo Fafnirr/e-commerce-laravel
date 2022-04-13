@@ -24,7 +24,7 @@
     <body class="antialiased">
        
       
-        @include('layouts.accueil')
+        @include('accueil')
 
     </body>
 </html>

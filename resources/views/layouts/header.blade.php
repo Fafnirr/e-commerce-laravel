@@ -9,13 +9,13 @@
         <title>Document</title>
     </head>
     <body>
-       <div class="justify-content-center">
+   
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top " style="background-color: #AC397E">
         <div class="container fluid">
     
   
           
-                  <a class="navbar-brand" href="#">Navbar</a>
+                  <a class="navbar-brand "  href="#">Navbar</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -25,7 +25,7 @@
                       <a class="nav-link" href="#">Features</a>
                       <a class="nav-link" href="#">Pricing</a>
                       <a class="nav-link disabled">Disabled</a>
-                      <a href="{{ route('login') }}" class="nav-link navbar-light "style="color: white">Log in</a>
+                      <a href="{{ route('login') }}" class="nav-link navbar-light " style="color: white">Log in</a>
                       <a href="{{ route('register') }}" class="nav-link nav justify-content-end"  style="color: white">Register</a>
                     </div>
                   </div>
@@ -47,7 +47,7 @@
                          
                       @endif
                   @endauth
-              </div>
+         
           @endif
       </div>
 
