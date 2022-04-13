@@ -15,7 +15,7 @@ use App\Http\Controllers\ProduitController;
 |
 */
 
-Route::get('/',  AccueilController::class . '@index');
+Route::get('/',  [AccueilController::class, 'index']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -24,3 +24,5 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 
 Route::resource('/produit', ProduitController::class);
+
+Route::get('produitDetail/{id}', [AccueilController::class, 'show']);

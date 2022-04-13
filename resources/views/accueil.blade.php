@@ -31,7 +31,7 @@
           <h5 class="card-title">{{ $produit->name }}</h5>
           <p class="card-text">{{ $produit->description }}</p>
           <p class="card-text">{{ $produit->prix }} €</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="produitDetail/{{$produit -> id}}" class="btn btn-primary">Voir plus</a>
         </div>
       </div>
     @endforeach

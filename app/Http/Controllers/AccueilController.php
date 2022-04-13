@@ -48,7 +48,8 @@ class AccueilController extends Controller
      */
     public function show($id)
     {
-        //
+        $produitId = Produit::find($id);
+        return view('produitDetail', ['produits' => $produitId]);
     }
 
     /**
