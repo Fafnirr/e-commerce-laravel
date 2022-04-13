@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ asset('css/produit.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Accueil</title>
     <link rel="stylesheet" href="{{ asset('css/header.css') }}">
 
     
@@ -35,12 +36,12 @@
    
     <div class="col-md-4 col-12 col-lg-3">
       <div class="card" style="width: 18rem;">
-        <img src="{{ $produit->image }}" class="card-img-top" alt="...">
+        <img src="{{ $produit->image }}" class="card-img-top" id="card-image" alt="...">
         <div class="card-body">
           <h5 class="card-title">{{ $produit->name }}</h5>
           <p class="card-text">{{ $produit->description }}</p>
           <p class="card-text">{{ $produit->prix }} €</p>
-          <a href="produitDetail/{{$produit -> id}}" class="btn btn-primary">Voir plus</a>
+          <a href="produitDetail/{{$produit -> id}}" id="btn" class="btn">Voir plus</a>
         </div>
       </div>
     </div>
